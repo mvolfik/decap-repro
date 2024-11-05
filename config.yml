@@ -1,0 +1,36 @@
+backend:
+  name: "github"
+  repo: "mvolfik/decap-repro-content"
+
+media_folder: "assets"
+
+collections:
+  - name: "mycollection"
+    label: "My collection"
+    folder: "mycollection"
+    format: "json"
+
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "My custom widget field"
+        name: "foo"
+        widget: "mywidget"
+
+  - name: "mycollection2"
+    label: "My collection without custom field for other testing"
+    folder: "mycollection2"
+    format: "json"
+
+    create: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "My custom widget field"
+        name: "foo"
+        widget: "string"
